@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <title>Settings</title>
+</head>
+  
+<body>
+  
+  <button class="show button">Create a new task</button>
+
+  <div class="settings">
+
+    <div class="settingsBox">
+
+      <span class="closeButton">✕</span>
+
+      <h4>Create A New Task</h4>
+
+      <!-- Task information inputs -->
+      <div id="taskInformation"> 
+        <label for="taskName">Task Name:</label>
+        <input type="input" id="taskName" name="taskType" onchange="updatedNameValue"></br>
+        
+        <label for="Date">Due Date:</label>
+
+        <input type=date id="taskDate" name="taskDue" onchange="updatedDateValue">
+        
+        <p> at </p>
+
+        <input type=time id="taskTime" name="taskDue" onchange="updatedTimeValue">
+        
+      </br>
+        
+        <label for="taskPriority">Task Priority:</label>
+        <select id="taskPriority" onchange="updatedPriorityValue">
+          <option value="high">High</option>
+          <option value="medium">Medium</option>
+          <option value="low">Low</option>
+        </select>
+
+        <input type="submit" id="submitTask" value="Create New Task">
+        
+        
+      </div>
+
+      
+     
+   
+
+      
+      <button id="cancelButton">Cancel</button>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
